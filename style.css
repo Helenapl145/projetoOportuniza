@@ -1,0 +1,781 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    /*
+    font-family: 'Koulen', cursive;
+    font-family: 'Passion One', cursive;
+    font-family: 'Red Rose', cursive;
+    */
+}
+
+:root{
+    --bg-primary: #D2E6F9;
+    --bg-secudary: #224C6C;
+    --bg-span: #FFDE59;
+    --bg-inscreva: #1A66B3;
+
+    --text-primary: #D2E6F9;
+    --text-secudary:#20DFAF;
+    --text-tercary: #148EFF;
+    --hover-a:  #58A3FE;
+
+    --title: #5020DF;
+    --hover-button: rgb(32, 223, 166);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bg-primary);
+    overflow-x: hidden;
+}
+
+img{
+    height: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.textOne,
+.textTwo,
+.textThree,
+.textFour,
+.parteTwo,
+.parteThree,
+.parteFour,
+.textFive,
+.textSix,
+.parteFive,
+.parteSix{
+    visibility: hidden;
+}
+
+
+
+/* ============== NAVEGAÇÃO ================== */
+
+#nav-bar{
+    background-color: var(--bg-secudary);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.logo a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.logo img{
+    border-radius: 50%;
+    height: 4rem;
+}
+
+.logo h1{
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.parte-nav ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 4rem;
+    gap: 1rem;
+
+}
+
+
+.parte-nav ul li a{
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: background 0.8s;
+}
+
+.parte-nav ul li a:hover{
+    color: var(--hover-a);
+}
+
+
+.cell-navegacao {
+    display: none;
+}
+
+/* ============== SOBRE ================== */
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-secudary);
+    text-align: center;
+    padding-block: 5rem;
+    line-height: 150%;
+    gap: 1rem;
+    
+}
+
+
+#sobre h1{
+    color: var(--text-secudary);
+    letter-spacing: 0.065em;
+    font-family: 'Passion One', cursive;
+    font-size: 3rem;
+}
+
+#sobre h4{
+    color: var(--text-tercary);
+    font-family: 'Red Rose', cursive;
+    font-size: 1.4rem;
+}
+
+#sobre p{
+    width: 40rem;
+    margin-inline: auto;
+    color: white;
+    letter-spacing: -0.015em;
+    font-family: 'Red Rose', cursive;
+    font-size: 1.3rem;
+}
+
+/* ============== OPORTUNIDADES ================== */
+
+#oportunidades{
+    padding-bottom: 6rem;
+}
+
+#oportunidades h1{
+    margin-inline: auto;
+    padding: 3rem;
+    width: 22rem;
+
+    font-family: 'Passion One';
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--text-tercary);
+
+    line-height: 100%;
+    letter-spacing: -0.015em;
+    
+}
+
+.oportunidade{
+    display: grid;
+    width: 1550px;
+    grid-template-columns: repeat(6, 5rem);
+    gap: 8rem;
+    margin-left: 8rem;
+    justify-content: space-around;
+}
+
+.opp{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+    
+}
+
+.opp img{
+    height: 12rem;
+    width: 10rem;
+}
+
+.opp span{
+    background-color: var(--bg-span);
+    width: 10.1rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+
+    line-height: 50%;
+}
+
+.opp a{
+    background-color: var(--bg-inscreva);
+    width: 10.1rem;
+    padding: 0.85em;
+    border-radius: 0.2rem;
+
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Passion One';
+    font-weight: 100;
+    font-size: 1rem;
+
+    line-height: 50%;
+    letter-spacing: -0.015em;
+
+    transition: background 0.5s;
+
+}
+
+.opp a:hover{
+    background-color: var(--bg-secudary);
+}
+
+
+/* ============== SOBRE ================== */
+
+#dicas{
+    background-color: var(--bg-secudary);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-block: 5rem;
+
+}
+
+#dicas .info h1{
+    font-family: 'Passion One';
+
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 106px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: var(--text-secudary);
+}
+
+#dicas .info p {
+    font-family: 'Passion One';
+    font-weight: 400;
+    font-size: 2rem;
+
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: -0.015em;
+
+    width: 90%;
+    margin-inline: auto;
+
+    color: var(--text-primary);
+}
+
+#dicas .dica{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    width: 920px;
+    padding: 0.5rem;
+    margin-right: 2rem;
+    
+}
+
+#dicas .dica img{
+    height: 80px;
+}
+
+#dicas .dica p{
+    font-family: 'Red Rose';
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: -0.015em;
+
+    padding-inline: 1rem;
+}
+
+
+#dicas .area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#dicas .area a{
+    text-align: center;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    background-color: var(--text-tercary);
+    padding-block: 5px;
+    width: 100px;
+
+    font-family: 'Passion One';
+    font-weight: 300;
+    font-size: 1rem;
+
+    line-height: 18px;
+    letter-spacing: 0.015em;
+
+    color: white;
+
+}
+
+#dicas .area a:hover{
+    background-color: var(--hover-a);
+}
+
+/* ============== DOAÇÃO ================== */
+
+#doacao {
+    text-align: center;
+    margin-block: 4rem;
+}
+
+#doacao h1{
+    font-family: 'Passion One';
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 70px;
+    letter-spacing: -0.015em;
+
+    color: var(--title);
+    margin-bottom: 1rem;
+}
+
+#doacao p{
+    margin-inline: auto;
+    width: 35rem;
+    margin-bottom: 5rem;
+
+    font-family: 'Red Rose';
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+
+    color: var(--bg-secudary);
+}
+
+#doacao a{
+
+    background-color: var(--text-secudary);
+    padding-block: 1rem;
+    padding-inline: 3rem;
+
+    border-radius: 2rem;
+
+    color: var(--title);
+    font-family: 'Red Rose';
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+#doacao a:hover{
+    background-color: var(--title);
+    color: white;
+}
+
+/* ============== FOOTER ================== */
+
+footer{
+    background-color: var(--bg-secudary);
+    text-align: center;
+    padding-block: 1rem;
+
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0.2rem;
+}
+
+
+footer p,
+footer a{
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'Red Rose';
+    line-height: 19px;
+    letter-spacing: -0.015em;
+}
+
+/* ============== RESPOSIVIDADE ================== */
+
+@media (max-width: 590px) {
+    #nav-bar {
+        display: flex;
+       
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        
+    }
+
+    #navegacao{
+        z-index: 999;
+    }
+
+
+    .parte-nav ul{
+        margin-right: 0;
+        position: fixed;
+        inset: 0 0 0 30%;
+      
+        
+        background-color: #148dffee;
+       
+
+        flex-direction: column;
+        text-align: left;
+        padding: min(30vh, 10rem) 2em;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .parte-nav ul[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .parte-nav ul li{
+        margin-bottom: 1rem;
+    }
+
+    .parte-nav ul li a{
+        font-size: 2rem;
+    }
+
+    .cell-navegacao{
+        display: flex;
+        position: fixed;
+        margin: -20px;
+
+     
+
+        background: url("/assests/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+       
+        
+        height: 2rem;
+        aspect-ratio: 1;
+       
+
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .cell-navegacao[aria-expanded="true"]{
+        background: url("/assests/icon-close.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        z-index: 999;
+    }
+
+    .cell-navegacao[aria-expanded="false"]{
+       position: absolute;
+    }
+
+    .cell-navegacao span{
+        display: none;
+    }
+
+
+    #sobre h1{
+        line-height: 1em;
+    }
+
+    #sobre p{
+        width: 30rem;
+    }
+
+    .oportunidade{
+        grid-template-columns: repeat(2, 10rem);
+        grid-template-rows: repeat(3, 12rem);
+        justify-content: left;
+        gap: 5rem;
+        margin-left: 3rem;
+        
+    }
+
+    #dicas{
+        display: grid;
+        grid-template-columns: 2fr;
+        gap: 2rem;
+        padding-block: 5rem;
+    }
+
+
+    #dicas .info h1{
+ 
+        font-size: 3rem;
+    
+        text-align: left;
+        margin-left: 200px;
+    }
+
+
+    #dicas .info p {
+        font-size: 1.2rem;
+        line-height: 20px;
+        text-align: justify;
+        letter-spacing: -0.010em;
+    
+        width: 80%;
+        margin-left: 50px;
+    
+    }
+
+    #dicas .dica{
+   
+        width: 400px;
+
+        
+    }
+    
+
+    .partes{
+        margin-left: 3rem;
+    }
+
+    #doacao p{
+        width: 30rem;
+    }
+} 
+
+
+@media (min-width: 590px) and (max-width: 900px) {
+    .oportunidade{
+        width: 900px;
+        grid-template-columns: repeat(2, 10rem);
+        margin: 0;
+        justify-content: center;
+        gap: 2rem;
+        
+    }
+
+    
+    #dicas .info h1{
+ 
+        font-size: 3rem;
+    
+        text-align: center;
+        
+    }
+
+
+    #dicas .info p {
+        font-size: 1.8rem;
+        line-height: 32px;
+        text-align: justify;
+        letter-spacing: -0.015em;
+    
+        width: 90%;
+        margin-left: 10px;
+    
+    }
+
+    #dicas .dica{
+        margin-left: 2rem;
+        width: 350px;
+
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+
+    #nav-bar{
+        gap: 3rem;
+    }
+
+    #base-navegacao li a{
+        font-size: 1.2rem;
+    }
+
+    .oportunidade{
+        width: 900px;
+        grid-template-columns: repeat(4, 10rem);
+        margin-left: 4rem;
+        justify-content: center;
+        gap: 4rem;
+        
+    }
+
+
+    #dicas .info h1{
+ 
+        font-size: 3rem;
+    
+        text-align: center;
+        
+    }
+
+
+    #dicas .info p {
+        font-size: 2rem;
+        line-height: 35px;
+        text-align: justify;
+        letter-spacing: -0.015em;
+    
+        width: 90%;
+        margin-left: 10px;
+    
+    }
+
+    #dicas .dica{
+        margin-left: 2rem;
+        width: 300px;
+
+    }
+
+
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+
+    #nav-bar{
+        gap: 3rem;
+    }
+
+    #base-navegacao li a{
+        font-size: 1.2rem;
+    }
+
+    .oportunidade{
+        width: 900px;
+        grid-template-columns: repeat(6, 7rem);
+        margin-left: 2rem;
+        justify-content: space-between;
+        gap: 6rem;
+        
+    }
+
+
+    #dicas .info h1{
+ 
+        font-size: 3rem;
+    
+        text-align: center;
+        
+    }
+
+
+    #dicas .info p {
+        font-size: 2rem;
+        line-height: 35px;
+        text-align: justify;
+        letter-spacing: -0.015em;
+    
+        width: 90%;
+        margin-left: 10px;
+    
+    }
+
+    #dicas .dica{
+        margin-left: 2rem;
+        width: 300px;
+
+    }
+
+
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .oportunidade{
+        width: 1200px;
+        grid-template-columns: repeat(6, 10rem);
+        margin-left: 6rem;
+        justify-content: space-between;
+        gap: 3rem;
+        
+    }
+
+    
+    #dicas .info h1{
+ 
+        font-size: 3rem;
+    
+        text-align: center;
+        
+    }
+
+
+    #dicas .info p {
+        font-size: 2rem;
+        line-height: 35px;
+        text-align: justify;
+        letter-spacing: -0.015em;
+    
+        width: 90%;
+        margin-left: 10px;
+    
+    }
+
+    #dicas .dica{
+        margin-left: 2rem;
+        width: 500px;
+
+    }
+
+}
+
+@media (min-width: 1500px) and (max-width: 1760px) {
+    .oportunidade{
+        width: 1200px;
+        grid-template-columns: repeat(6, 10rem);
+        margin-left: 6.5rem;
+        justify-content: space-between;
+        gap: 5rem;
+       
+        
+    }
+
+    #dicas .info h1{
+ 
+        font-size: 3rem;
+    
+        text-align: center;
+        
+    }
+
+
+    #dicas .info p {
+        font-size: 2rem;
+        line-height: 35px;
+        text-align: justify;
+        letter-spacing: -0.015em;
+    
+        width: 90%;
+        margin-left: 10px;
+    
+    }
+
+    #dicas .dica{
+        margin-left: 2rem;
+        width: 600px;
+
+
+    }
+}
+

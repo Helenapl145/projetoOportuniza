@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça sua doação</title>
+
+    <link rel="stylesheet" href="./doacao.css">
+    <link rel="shortcut icon" href="./imagens/doacao.png" type="image/x-icon">
+
+</head>
+
+
+<body>
+    <form method="POST" autocomplete="on">
+       <div class="voltar">
+           <a href="./index.html"><img src="./imagens/botao-voltar.png" alt="voltar"></a>
+       </div>
+        <div class="wraper">
+            <h1>Faça sua doação</h1>
+            <div>
+                <label for="nomeDoador">Seu nome:</label> <br>
+                <input type="text" name="nome" id="nomeDoador" placeholder="nome completo" required>
+            </div>
+
+            <div>
+                <label for="emailDoador">Seu email:</label> <br>
+                <input type="email" name="email" id="emailDoador" placeholder="coloque seu email" >
+            </div>
+
+            <div>
+                <label for="valorDoado">Valor a ser doado:</label> <br>
+                <input type="number" name="valor" id="valorDoado" placeholder="R$">
+            </div>
+
+
+            <div>
+                <label for="numCard">Número do cartão</label> <br>
+                <input type="text" name="card" id="numCard" placeholder="nome completo">
+            </div>
+
+         
+           
+
+            <input class="botao" id="btnSubmit" type="submit" value="Finalizar">
+        </div>
+    </form>
+</body>
+
+<script src="./doacoes.js"></script>
+
+</html>
