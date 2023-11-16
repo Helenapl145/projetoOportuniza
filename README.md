@@ -17,8 +17,10 @@ Projeto feio a partir de uma adaptação de um Hackathon que tem um objetivo soc
 
 <br>
 
+<p align="center"> 
+    <img alt="Projeto Oportuniza" src="src/imagens/preview.png">
 
-![image](https://user-images.githubusercontent.com/71864098/207725394-a5d70eac-af28-465c-a09c-082d369e1b48.png)
+</p>
 
 ## 🚀 Tecnologias
 
