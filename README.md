@@ -2,7 +2,7 @@
 <h1 align="center">Oportuniza</h1>
 
 <p align="center">
-Projeto feio a partir de uma adaptação de um Hackathon que tem um objetivo social.<br/>
+Projeto feito a partir de uma adaptação de um Hackathon que tem um objetivo social.<br/>
 </p>
 
 <p align="center">
